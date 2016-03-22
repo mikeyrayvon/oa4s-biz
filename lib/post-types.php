@@ -16,6 +16,7 @@ add_action( 'admin_head', 'add_menu_icons_styles' );
 
 
 //Register Custom Post Types
+/*
 add_action( 'init', 'register_cpt_project' );
 
 function register_cpt_project() {
@@ -57,4 +58,4 @@ function register_cpt_project() {
     );
 
     register_post_type( 'project', $args );
-}
+}*/
