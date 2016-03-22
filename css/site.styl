@@ -1,0 +1,104 @@
+@import "sanitize"
+@import "helpers"
+
+.container
+  margin: 0 auto
+  width: 1300px
+
+$color-black-soft = rgb(14, 14, 14)
+$color-white-soft = rgb(253, 253, 253)
+
+body
+  font-size: 15px
+  line-height: 1.35em
+  letter-spacing: 0.001em
+
+h1
+  font-size: 1.5em
+  font-weight: normal
+  margin-bottom: 1em
+  
+p
+  width: 50%
+  margin-bottom: 1em
+  
+em
+  font-style: italic
+  
+strong
+  font-weight: 600
+
+a, a:active, a:visited
+  color:grey
+  text-decoration: underline
+
+html
+  background-color: $color-white-soft
+  color: $color-black-soft
+
+img
+  max-width: 100%
+  height: auto
+  display: block
+  margin-bottom: 1em
+
+#header
+  padding: 2em 0 2em 0 
+  
+#main-content 
+  padding-bottom: 2em
+  
+iframe
+  width: 1000px
+  height: 562.5px 
+  margin-bottom: 1em
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1300px)
+  .container
+    width: 1000px
+
+@media screen and (max-width: 1000px)
+  .container
+    width: 800px
+  p
+    width: 75% 
+  iframe
+    width: 100%
+    height: 450px
+    
+@media screen and (max-width: 800px)
+  .container
+    width: 600px
+  iframe
+    height: 337.5px
+    
+@media screen and (max-width: 600px)
+  .container
+    width: 500px
+  p
+    width: 100%
+  iframe
+    height: 281.25px
+    
+@media screen and (max-width: 500px)
+  .container
+    width: 400px
+  iframe
+    height: 225px
+    
+@media screen and (max-width: 400px)
+  .container
+    width: 300px
+  iframe
+    height: 168.75px
+    
+@media screen and (max-width: 300px)
+  .container
+    width: 280px
+  iframe
+    height: 157.5px
+    
+
