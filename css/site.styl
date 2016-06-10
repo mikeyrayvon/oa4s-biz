@@ -7,26 +7,49 @@
 
 $color-black-soft = rgb(14, 14, 14)
 $color-white-soft = rgb(253, 253, 253)
+$color-blue = #041269
+
+$font-regular = 'Univers-Light', 'Helvetica Neue', helvetica, arial, sans-serif;
+$font-oblique = 'Univers-Light-Oblique', 'Helvetica Neue', helvetica, arial, sans-serif;
+$font-bold = 'Univers-Roman', 'Helvetica Neue', helvetica, arial, sans-serif;
+$font-bold-oblique = 'Univers-Oblique', 'Helvetica Neue', helvetica, arial, sans-serif;
 
 body
   font-size: 15px
   line-height: 1.35em
   letter-spacing: 0.001em
+  font-weight: 300
+  font-style: normal
+  font-family: $font-regular
 
 h1
   font-size: 1.5em
-  font-weight: normal
   margin-bottom: 1em
+  font-weight: 300
+  font-style: normal
+  font-family: $font-regular
   
 p
   width: 50%
   margin-bottom: 1em
+  font-weight: 300
+  font-style: normal
+  font-family: $font-regular
   
 em
   font-style: italic
+  font-weight: 300
+  font-family: $font-oblique
   
 strong
-  font-weight: 600
+  font-weight: 400
+  font-style: normal
+  font-family: $font-bold
+  
+strong em, em strong
+  font-weight: 400
+  font-style: italic
+  font-family: $font-bold-oblique
 
 a, a:active, a:visited
   color:grey
@@ -34,7 +57,7 @@ a, a:active, a:visited
 
 html
   background-color: $color-white-soft
-  color: $color-black-soft
+  color: $color-blue
 
 img
   max-width: 100%
